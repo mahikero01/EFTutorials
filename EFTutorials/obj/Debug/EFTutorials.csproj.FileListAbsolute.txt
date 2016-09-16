@@ -1,2 +1,11 @@
 C:\Users\sarmife\AppData\Local\Temporary Projects\EFTutorials\bin\Debug\EFTutorials.exe.config
 P:\SandBox\EFTutorials\EFTutorials\bin\Debug\EFTutorials.exe.config
+P:\SandBox\EFTutorials\EFTutorials\bin\Debug\EFTutorials.exe
+P:\SandBox\EFTutorials\EFTutorials\bin\Debug\EFTutorials.pdb
+P:\SandBox\EFTutorials\EFTutorials\bin\Debug\EntityFramework.dll
+P:\SandBox\EFTutorials\EFTutorials\bin\Debug\EntityFramework.SqlServer.dll
+P:\SandBox\EFTutorials\EFTutorials\bin\Debug\EntityFramework.xml
+P:\SandBox\EFTutorials\EFTutorials\bin\Debug\EntityFramework.SqlServer.xml
+P:\SandBox\EFTutorials\EFTutorials\obj\Debug\EFTutorials.csprojResolveAssemblyReference.cache
+P:\SandBox\EFTutorials\EFTutorials\obj\Debug\EFTutorials.exe
+P:\SandBox\EFTutorials\EFTutorials\obj\Debug\EFTutorials.pdb
