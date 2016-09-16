@@ -1,0 +1,2 @@
+C:\Users\sarmife\AppData\Local\Temporary Projects\EFTutorials\bin\Debug\EFTutorials.exe.config
+P:\SandBox\EFTutorials\EFTutorials\bin\Debug\EFTutorials.exe.config
