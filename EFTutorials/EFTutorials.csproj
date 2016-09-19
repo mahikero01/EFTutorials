@@ -53,63 +53,63 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Course.cs">
-      <DependentUpon>School.tt</DependentUpon>
+      <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
     <Compile Include="GetCoursesByStudentId_Result.cs">
-      <DependentUpon>School.tt</DependentUpon>
+      <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="School.Context.cs">
+    <Compile Include="SchoolModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>School.Context.tt</DependentUpon>
+      <DependentUpon>SchoolModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="School.cs">
+    <Compile Include="SchoolModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>School.tt</DependentUpon>
+      <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="School.Designer.cs">
+    <Compile Include="SchoolModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>School.edmx</DependentUpon>
+      <DependentUpon>SchoolModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Standard.cs">
-      <DependentUpon>School.tt</DependentUpon>
+      <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Student.cs">
-      <DependentUpon>School.tt</DependentUpon>
+      <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
     <Compile Include="StudentAddress.cs">
-      <DependentUpon>School.tt</DependentUpon>
+      <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Teacher.cs">
-      <DependentUpon>School.tt</DependentUpon>
+      <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
     <Compile Include="View_StudentCourse.cs">
-      <DependentUpon>School.tt</DependentUpon>
+      <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <EntityDeploy Include="School.edmx">
+    <EntityDeploy Include="SchoolModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>School.Designer.cs</LastGenOutput>
+      <LastGenOutput>SchoolModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="School.Context.tt">
+    <None Include="SchoolModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>School.edmx</DependentUpon>
-      <LastGenOutput>School.Context.cs</LastGenOutput>
+      <DependentUpon>SchoolModel.edmx</DependentUpon>
+      <LastGenOutput>SchoolModel.Context.cs</LastGenOutput>
     </None>
-    <None Include="School.edmx.diagram">
-      <DependentUpon>School.edmx</DependentUpon>
+    <None Include="SchoolModel.edmx.diagram">
+      <DependentUpon>SchoolModel.edmx</DependentUpon>
     </None>
-    <None Include="School.tt">
+    <None Include="SchoolModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>School.edmx</DependentUpon>
-      <LastGenOutput>School.cs</LastGenOutput>
+      <DependentUpon>SchoolModel.edmx</DependentUpon>
+      <LastGenOutput>SchoolModel.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
