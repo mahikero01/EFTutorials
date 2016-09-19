@@ -52,12 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Course.cs">
-      <DependentUpon>SchoolModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="GetCoursesByStudentId_Result.cs">
-      <DependentUpon>SchoolModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SchoolModel.Context.cs">
@@ -75,19 +69,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SchoolModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Standard.cs">
+    <Compile Include="SC_Course.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Student.cs">
+    <Compile Include="SC_Standard.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="StudentAddress.cs">
+    <Compile Include="SC_Student.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Teacher.cs">
+    <Compile Include="SC_StudentAddress.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="View_StudentCourse.cs">
+    <Compile Include="SC_Student_StudentCourse_Course_View_StudentCourse.cs">
+      <DependentUpon>SchoolModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SC_Teacher.cs">
       <DependentUpon>SchoolModel.tt</DependentUpon>
     </Compile>
   </ItemGroup>
