@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SchoolModelStoreContainer" CdmEntityContainer="SchoolEntities">
+    <EntitySetMapping Name="SC_Course">
+      <EntityTypeMapping TypeName="SchoolModel.SC_Course">
+        <MappingFragment StoreEntitySet="SC_Course">
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="TeacherId" ColumnName="TeacherId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SC_Standard">
+      <EntityTypeMapping TypeName="SchoolModel.SC_Standard">
+        <MappingFragment StoreEntitySet="SC_Standard">
+          <ScalarProperty Name="StandardId" ColumnName="StandardId" />
+          <ScalarProperty Name="StandardName" ColumnName="StandardName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SC_Student">
+      <EntityTypeMapping TypeName="SchoolModel.SC_Student">
+        <MappingFragment StoreEntitySet="SC_Student">
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+          <ScalarProperty Name="StandardId" ColumnName="StandardId" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SC_StudentAddress">
+      <EntityTypeMapping TypeName="SchoolModel.SC_StudentAddress">
+        <MappingFragment StoreEntitySet="SC_StudentAddress">
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SC_Teacher">
+      <EntityTypeMapping TypeName="SchoolModel.SC_Teacher">
+        <MappingFragment StoreEntitySet="SC_Teacher">
+          <ScalarProperty Name="TeacherId" ColumnName="TeacherId" />
+          <ScalarProperty Name="TeacherName" ColumnName="TeacherName" />
+          <ScalarProperty Name="StandardId" ColumnName="StandardId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SC_Student_StudentCourse_Course_View_StudentCourse">
+      <EntityTypeMapping TypeName="SchoolModel.SC_Student_StudentCourse_Course_View_StudentCourse">
+        <MappingFragment StoreEntitySet="SC_Student_StudentCourse_Course_View_StudentCourse">
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+          <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="SC_StudentCourse" TypeName="SchoolModel.SC_StudentCourse" StoreEntitySet="SC_StudentCourse">
+      <EndProperty Name="SC_Course">
+        <ScalarProperty Name="CourseId" ColumnName="CourseId" />
+      </EndProperty>
+      <EndProperty Name="SC_Student">
+        <ScalarProperty Name="StudentID" ColumnName="StudentId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="SC_Student_DeleteStudent" FunctionName="SchoolModel.Store.SC_Student_DeleteStudent" />
+    <FunctionImportMapping FunctionImportName="SC_Student_InsertStudentInfo" FunctionName="SchoolModel.Store.SC_Student_InsertStudentInfo" />
+    <FunctionImportMapping FunctionImportName="SC_Student_StudentCourse_Course_GetCoursesByStudentId" FunctionName="SchoolModel.Store.SC_Student_StudentCourse_Course_GetCoursesByStudentId" />
+    <FunctionImportMapping FunctionImportName="SC_Student_UpdateStudent" FunctionName="SchoolModel.Store.SC_Student_UpdateStudent" />
+  </EntityContainerMapping>
+</Mapping>
